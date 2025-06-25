@@ -1,11 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Rise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-zinc-100">
+    <div id="main" class="w-full h-screen p-4 overflow-hidden relative">
+      <!-- Background Blend Layer -->
+      <div class="absolute inset-0 bg-gradient-to-b from-white/70 to-zinc-300 mix-blend-multiply z-0"></div>
+
+      <!-- Navigation Bar -->
+      <div
+        class="nav-bar relative z-10 flex items-center justify-between w-full bg-white px-6 py-4 rounded-xl shadow-lg"
+      >
+        <div class="logo">
+          <h1 class="font-extrabold text-3xl text-orange-500 tracking-tight">
+            Pixel Rise
+          </h1>
+        </div>
+
+        <div class="pages-link px-3 py-2 bg-zinc-100 rounded-lg shadow-sm">
+          <ul class="flex items-center gap-6 text-sm font-medium text-zinc-600">
+            <li class="hover:text-orange-500 transition cursor-pointer">Home</li>
+            <li class="hover:text-orange-500 transition cursor-pointer">About</li>
+            <li class="hover:text-orange-500 transition cursor-pointer">Services</li>
+            <li class="hover:text-orange-500 transition cursor-pointer">Pricing</li>
+            <li class="hover:text-orange-500 transition cursor-pointer">Solution</li>
+            <li class="hover:text-orange-500 transition cursor-pointer">English</li>
+          </ul>
+        </div>
+
+        <div class="button">
+          <button
+            class="px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-lg transition shadow-md"
+          >
+            Login / Register
+          </button>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="hero-section relative z-10 w-full h-full flex items-center justify-between pt-20">
+        <!-- Left Side -->
+        <div class="left-hero flex flex-col pl-12 w-1/2 h-full justify-center">
+          <div class="left-top space-y-3">
+            <p class="text-6xl text-zinc-800 font-black leading-tight">Building.</p>
+            <p class="text-6xl text-zinc-800 font-black leading-tight">Digital</p>
+            <p class="text-6xl text-zinc-800 font-black leading-tight">Experiences</p>
+            <p class="text-6xl text-zinc-800 font-black leading-tight">That Stick</p>
+          </div>
+
+          <div class="left-bottom mt-10 space-y-4">
+            <h1 class="text-[12vw] uppercase text-white font-bold tracking-tight drop-shadow-lg">Pixel</h1>
+            <p class="w-[80%] text-zinc-600">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis,
+              eius totam. Esse ad ut, beatae impedit hic enim.
+            </p>
+            <div class="buttons mt-6">
+              <button
+                class="px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg shadow-md transition"
+              >
+                Get Started
+              </button>
+              <button
+                class="px-4 py-2 bg-zinc-800 hover:bg-zinc-900 text-white rounded-lg shadow-md transition ml-4"
+              >
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="right-hero flex flex-col items-center justify-around w-1/2 h-full pr-10 relative">
+          <div class="text-center space-y-3">
+            <h1 class="text-6xl font-bold">
+              132%
+              <span class="text-3xl font-medium text-zinc-500">Growth</span>
+            </h1>
+            <p class="text-zinc-600 text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+              corrupti!
+            </p>
+          </div>
+
+          <p class="text-zinc-600 text-sm absolute bottom-20 right-10 w-[20vw]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, odit?
+          </p>
+
+          <h1 class="text-9xl uppercase text-white tracking-widest font-bold drop-shadow-lg">
+            Rise
+          </h1>
+        </div>
+
+        <!-- Hero Images -->
+        <div class="absolute top-10 left-1/2 transform -translate-x-1/2 z-0">
+          <img
+            src="./214008923-pink-photo-camera-isolated-on-blue-background-3d-render-illustration-removebg-preview.png"
+            class="w-32 opacity-70 mix-blend-multiply"
+            alt=""
+          />
+        </div>
+
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0">
+          <img
+            src="./unnamed-removebg-preview.png"
+            class="w-96 opacity-90 mix-blend-multiply"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
